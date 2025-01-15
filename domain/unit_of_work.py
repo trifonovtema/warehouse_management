@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class UnitOfWork(ABC):
     @abstractmethod
     def __enter__(self):
@@ -15,4 +16,8 @@ class UnitOfWork(ABC):
 
     @abstractmethod
     def rollback(self):
+        pass
+
+    @abstractmethod
+    def session(self):
         pass
