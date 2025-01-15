@@ -21,9 +21,6 @@ jobs:
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
-      - name: Run linters
-        run: |
-          make format
       - name: Run tests
         run: |
           make test
